@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+.main-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.main-section .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(262.5px,1fr));
+    height: 430px;
+    width: 787.5px;
+    border-radius: 20%;
+}
+.main-section .card .col {
+    padding: 40px 40px 0 40px;
+    min-height: 430px;
+    position: relative;
+}
+.main-section .card .col img {
+    width: 55px;
+}
+.main-section .card .col h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 34px;
+    color: hsl(0, 0%, 95%);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.main-section .card .col p {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 14px;
+    line-height: 22px;
+}
+.main-section .card .col button {
+    position: absolute;
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding: 12px 24px; 
+    font-size: 15px;
+    bottom: 40px;
+}
+.main-section .card .col-1 button {
+    color: hsl(31, 77%, 52%);
+}
+.main-section .card .col-2 button {
+    color: hsl(184, 100%, 22%);
+}
+.main-section .card .col-3 button {
+    color: hsl(179, 100%, 13%);
+}
+  
+.main-section .card .col-1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.main-section .card .col-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.main-section .card .col-3 {
+    background-color: hsl(179, 100%, 13%);
+}
+.main-section .card .col button:hover {
+    background-color: transparent;
+    color: hsla(0, 0%, 100%, 0.7);
+    border: 2px solid hsla(0, 0%, 100%, 0.7);;
+}
+@media (max-width: 375px) {
+    .main-section .card .col {
+        min-height: 400px;
+        }
+}
